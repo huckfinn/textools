@@ -51,6 +51,7 @@ public class ValidateLatex implements Command {
         rules.put("(While|, while) ", "use 'Although' instead");
         rules.put("''\\.", "move . into quotes");
         rules.put("[Bb]ecause of this", "use hence instead of because of this");
+	rules.put("In the following,? we", "use subsequently or below instead of in the following, we ...");
         rules.put("(Java|activiti|camunda~BPM|ODE) \\d+", "Instead of Java 8, use Java~8");
 
         rules.put("\\b(from| in|and|with|see|In|From|With|And|See)( |~)\\\\cite[^t]", "instead of 'in [x]' use 'Harrer et al. [x]'");
